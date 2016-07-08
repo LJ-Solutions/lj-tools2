@@ -1,0 +1,9 @@
+En ventas esta:
+
+invoice
+pagos
+estimados
+
+recibo de venta
+nota de credito
+cargo tardio
