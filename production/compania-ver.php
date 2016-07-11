@@ -101,19 +101,13 @@
           </div>
         </div>
         <!-- /page content -->
-
+          </div>
         <!-- footer content -->
-        <?php
-			include('footer.php');
-		?>
-        <!-- /footer content -->
-      </div>
-    </div>
-
+        <?php include('footer.php'); ?>
+        <!-- /footer content -->        
+        </div>
     <!-- jQuery -->
-     <?php
-		include('myjs.php');
-	 ?>
+     <?php include('myjs.php'); ?>
 
   </body>
 </html>

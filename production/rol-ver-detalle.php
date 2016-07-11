@@ -184,27 +184,20 @@ if (isset($_POST["boton1"])) {
          <div class="clearfix"></div>   
             	
               </div>
-            </div> 
-            
-          </div>
-        </div>        
+            </div>      
         <!-- /page content -->
 
         <!-- footer content -->
         <div id='container'>
         
 		</div>
-		<?php
-			include('footer.php');
-		?>
+		<?php include('footer.php'); ?>
         <!-- /footer content -->
       </div>
     </div>
 
     <!-- jQuery -->
-     <?php
-		include('myjs.php');
-	 ?>
+     <?php include('myjs.php'); ?>
 
   </body>
 </html>

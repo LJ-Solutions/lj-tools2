@@ -301,7 +301,15 @@
 				include('end-form-submit.php');
 			?>
           </div>
-        </div>        
+        </div>     
+        </div>
+        </div>      
+           </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
         <!-- /page content -->
 
         <!-- footer content -->

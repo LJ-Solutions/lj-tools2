@@ -209,25 +209,22 @@
               </div>
             </div>   
             
-            <?php
-				include('end-form-submit-email.php');
-			?>
+            <?php include('end-form-submit-email.php');?>
           </div>
-        </div>        
+        </div> 
+           </div> 
+          </div> 
+        </div> 
         <!-- /page content -->
 
         <!-- footer content -->
-        <?php
-			include('footer.php');
-		?>
+        <?php include('footer.php');?>
         <!-- /footer content -->
       </div>
     </div>
 
     <!-- jQuery -->
-     <?php
-		include('myjs.php');
-	 ?>
+     <?php include('myjs.php'); ?>
 
   </body>
 </html>

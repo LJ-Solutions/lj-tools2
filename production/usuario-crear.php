@@ -201,6 +201,9 @@
 				</div>
           </div>
         </div> 
+         </div> 
+         </div> 
+          </div> 
                 
         <!-- /page content -->
 
@@ -208,17 +211,13 @@
         <div id='container'>
 		
 		</div>
-		<?php
-			include('footer.php');
-		?>
+		<?php include('footer.php'); ?>
         <!-- /footer content -->
       </div>
     </div>
 
     <!-- jQuery -->
-     <?php
-		include('myjs.php');
-	 ?>
+     <?php include('myjs.php'); ?>
 
   </body>
 </html>

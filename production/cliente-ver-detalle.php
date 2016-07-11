@@ -203,19 +203,16 @@
           </div>
         </div>        
         <!-- /page content -->
-
+          </div>
+          </div>
+          </div>
         <!-- footer content -->
-        <?php
-			include('footer.php');
-		?>
-        <!-- /footer content -->
+        <?php include('footer.php'); ?>
+        <!-- /footer content -->        
+        </div>
       </div>
-    </div>
-
     <!-- jQuery -->
-     <?php
-		include('myjs.php');
-	 ?>
+     <?php include('myjs.php'); ?>
 
   </body>
 </html>

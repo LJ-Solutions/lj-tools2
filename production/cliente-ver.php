@@ -114,21 +114,21 @@
                       
                       <div class="col-md-2 col-sm-2 col-xs-12 form-group has-feedback">                        
                         
-        				<input type="text" name="nombre-completo" id="nombre-completo" value="nombre-completo">        				
+        				<input class="form-control" type="text" name="nombre-completo" id="nombre-completo" placeholder="Nombre Completo">        				
                                                  
                         <br />            
                       </div>                      
                       
                       <div class="col-md-2 col-sm-2 col-xs-12 form-group has-feedback">
                         
-        				<input type="text" name="nombre-comercial" id="nombre-comercial" value="nombre-comercial">        				
+        				<input class="form-control" type="text" name="nombre-comercial" id="nombre-comercial" placeholder="Nombre Comercial">        				
                                                 
                         <br />                  
                       </div>
                       
                       <div class="col-md-2 col-sm-2 col-xs-12 form-group has-feedback">
                         
-        				<input type="text" name="telefono" id="telefono" value="telefono">
+        				<input class="form-control" type="text" name="telefono" id="telefono" placeholder="Telefono">
         				
                                               
                         <br />                       
@@ -136,14 +136,14 @@
                       
                       <div class="col-md-2 col-sm-2 col-xs-12 form-group has-feedback">
                         
-        				<input type="text" name="celular" id="celular" value="celular">        				
+        				<input class="form-control" type="text" name="celular" id="celular" placeholder="Celular">        				
                                                  
                         <br />                             
                       </div> 
                       
                       <div class="col-md-2 col-sm-2 col-xs-12 form-group has-feedback">
                         
-        				<input type="email" name="email" id="email" value="email">        				
+        				<input class="form-control" type="email" name="email" id="email" placeholder="E-mail">        				
                                                  
                         <br />                             
                       </div> 
@@ -158,36 +158,36 @@
                       
                       <div class="col-md-2 col-sm-2 col-xs-12 form-group has-feedback">                        
                         
-        				<input type="text" name="nombre-completo" id="nombre-completo" value="nombre-completo">        				
+        				<input class="form-control" type="text" name="nombre-completo" id="nombre-completo" placeholder="Nombre Completo">        				
                                                  
                         <br />            
                       </div>                      
                       
                       <div class="col-md-2 col-sm-2 col-xs-12 form-group has-feedback">
                         
-        				<input type="text" name="nombre-comercial" id="nombre-comercial" value="nombre-comercial">        				
+        				<input class="form-control" type="text" name="nombre-comercial" id="nombre-comercial" placeholder="Nombre Comercial">        				
                                                 
                         <br />                  
                       </div>
                       
-                      <div class="col-md-2 col-sm-2 col-xs-12 form-group has-feedback">
+                      <div class="col-md-2 col-sm-2 col-xs-12 form-group">
                         
-        				<input type="text" name="telefono" id="telefono" value="telefono">
+        				<input class="form-control" type="text" name="telefono" id="telefono" placeholder="Telefono">
         				
                                               
                         <br />                       
                       </div>                      
                       
-                      <div class="col-md-2 col-sm-2 col-xs-12 form-group has-feedback">
+                      <div class="col-md-2 col-sm-2 col-xs-12 form-group">
                         
-        				<input type="text" name="celular" id="celular" value="celular">        				
+        				<input class="form-control" type="text" name="celular" id="celular" placeholder="Celular">        				
                                                  
                         <br />                             
                       </div> 
                       
-                      <div class="col-md-2 col-sm-2 col-xs-12 form-group has-feedback">
+                      <div class="col-md-2 col-sm-2 col-xs-12 form-group">
                         
-        				<input type="email" name="email" id="email" value="email">        				
+        				<input class="form-control" type="email" name="email" id="email" placeholder="E-mail">        				
                                                  
                         <br />                             
                       </div> 
@@ -207,19 +207,15 @@
           </div>
         </div>
         <!-- /page content -->
-
+          </div>
+          </div>
         <!-- footer content -->
-        <?php
-			include('footer.php');
-		?>
-        <!-- /footer content -->
+        <?php include('footer.php'); ?>
+        <!-- /footer content -->        
+        </div>
       </div>
-    </div>
-
     <!-- jQuery -->
-     <?php
-		include('myjs.php');
-	 ?>
+     <?php include('myjs.php'); ?>
 
   </body>
 </html>
