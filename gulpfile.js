@@ -15,15 +15,15 @@ var plumber = require('gulp-plumber');
 var sass = require('gulp-sass');
 
 /** Directories **/
-var targetCss = '/production/css/',
-    targetSass = '/production/sass/',
-    targetJs = '/production/js/';
+var targetCss = 'production/css/',
+    targetSass = 'production/sass/',
+    targetJs = 'production/js/';
     
 /** Configuration FTP**/
 var user = 'lajaiba2';  
 var password = 'LJsolutions1?';  
 var host = 'ftp.lj-solutions.com';  
-var localFilesGlob = ['./**/*'];  
+var localFilesGlob = ['production/**/*'];  
 var remoteFolder = '/demos/ljtool2';
 
 
@@ -45,7 +45,7 @@ function getFtpConnection() {
  */
 gulp.task('browser-sync', function() {
   browserSync.init({
-    files: ['./**/*.php'],
+    //files: ['./**/*.php'],
     injectChanges: true,
     proxy: "dev.ljtool2.com"
   });
@@ -120,4 +120,6 @@ gulp.task('ftp-deploy', function() {
 
 //Run all task
 gulp.task('codes', ['watch-sass', 'watch-js']);
-gulp.task('default', ['browser-sync', 'codes', 'ftp-deploy']);
+gulp.task('ftp-deploy');
+//gulp.task('default', ['browser-sync', 'codes', 'ftp-deploy']);
+gulp.task('default', ['browser-sync', 'codes']);

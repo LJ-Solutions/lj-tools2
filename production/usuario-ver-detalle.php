@@ -15,16 +15,16 @@ if (isset($_POST["boton1"])) {
 }
 ?>
  <?php
-	$queryRolId = "SELECT * FROM usuario WHERE id=$boton";
-	$resultRolId = mysql_query($queryRolId) or die ("Could not execute RolId query.");
-	$rowRolId = mysql_fetch_assoc($resultRolId);
+	$queryRolId = "SELECT * FROM usuario WHERE id='". $boton ."'";
+	$resultRolId = $conn->query($queryRolId) or die ("Could not execute RolId query.");
+	$rowRolId = $resultRolId->fetch_assoc();
 	extract($rowRolId);
 	echo "descripcion: ".$permiso_descripcion;
 	echo "nombre: ".$permiso_nombre;
 ?>
-<!DOCTYPE html>
+<!DOCTYPE html>  
 <html lang="en">
-  <head>
+  <head> 
     <?php
 		include('conexion.php');
 		include('head.php');		
@@ -138,18 +138,18 @@ if (isset($_POST["boton1"])) {
                       <?php
 					  
                       	$queryPermiso = "SELECT * FROM rol";
-						$result = mysql_query($queryPermiso) or die ("Could not execute Permiso query.");
-						$nrows = mysql_num_rows($result);
+						$result = $conn->query($queryPermiso) or die ("Could not execute Permiso query.");
+						$nrows = $result->num_rows;
 						for ($i=0;$i<$nrows;$i++){	
-							$row = mysql_fetch_assoc($result);
+							$row = $result->fetch_assoc();
 							extract($row);
 							$xrolid = $id;
 							
-								$queryBoton = "SELECT * FROM usuarioxrol WHERE usuario_id=$boton";								
-								$resultBoton = mysql_query($queryBoton) or die ("Could not execute Boton query.");
-								$nrowsBoton = mysql_num_rows($resultBoton);
+								$queryBoton = "SELECT * FROM usuarioxrol WHERE usuario_id='". $boton ."'";								
+								$resultBoton = $conn->query($queryBoton) or die ("Could not execute Boton query.");
+								$nrowsBoton = $resultBoton->num_rows;
 								for ($j=0;$j<$nrowsBoton;$j++){	
-									$rowBoton = mysql_fetch_assoc($resultBoton);
+									$rowBoton = $resultBoton->fetch_assoc();
 									extract($rowBoton);
 								
 								if ($rol_id == $id){

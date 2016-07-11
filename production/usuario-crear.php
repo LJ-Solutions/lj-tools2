@@ -117,10 +117,10 @@
                       <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
                       <?php
                       	$queryRol = "SELECT * FROM rol";
-						$resultRol = mysql_query($queryRol) or die ("Could not execute Rol query.");
-						$nrowsRol = mysql_num_rows($resultRol);
+						$resultRol = $conn->query($queryRol) or die ("Could not execute Rol query.");
+						$nrowsRol = $resultRol->num_rows;
 						for ($i=0;$i<$nrowsRol;$i++){	
-							$rowRol = mysql_fetch_assoc($resultRol);
+							$rowRol = $resultRol->fetch_assoc();
 							extract($rowRol);
 					  ?>
                       	<div class="col-md-2 col-sm-2 col-xs-12 form-group has-feedback">
@@ -168,10 +168,10 @@
                       <?php
                         //Query to display all the roles available
 						$queryUsuario = "SELECT * FROM usuario";
-						$resultUsuario = mysql_query($queryUsuario) or die ("Could not execute Usuario query.");
-						$nrowsUsuario = mysql_num_rows($resultUsuario);
+						$resultUsuario = $conn->query($queryUsuario) or die ("Could not execute Usuario query.");
+						$nrowsUsuario = $resultUsuario->num_rows;
 						for ($k=0;$k<$nrowsUsuario;$k++){	
-						$rowUsuario = mysql_fetch_assoc($resultUsuario);
+						$rowUsuario = $resultUsuario->fetch_assoc();
 						extract($rowUsuario);						
 					  ?>
                       <div class="col-md-4 col-sm-4 col-xs-12 form-group has-feedback">                        

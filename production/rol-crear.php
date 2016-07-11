@@ -105,12 +105,12 @@
                           			data-parsley-validation-threshold="10" placeholder=""></textarea>
                     			</div>
             				</div>                                             		
-            	</div> 
+            	</div>   
             
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">                  
-                  <div class="x_content">
+                  <div class="x_content">    
                     <br />                    			
                       
                       <h2>Permisos</h2>
@@ -118,10 +118,10 @@
                       <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
                       <?php
                       	$queryPermiso = "SELECT * FROM permiso";
-						$result = mysql_query($queryPermiso) or die ("Could not execute Permiso query.");
-						$nrows = mysql_num_rows($result);
+						$result = $conn->query($queryPermiso) or die ("Could not execute Permiso query.");
+						$nrows = $result->num_rows;
 						for ($i=0;$i<$nrows;$i++){	
-							$row = mysql_fetch_assoc($result);
+							$row = $result->fetch_assoc();
 							extract($row);
 					  ?>
                       	<div class="col-md-2 col-sm-2 col-xs-12 form-group has-feedback">
@@ -169,10 +169,10 @@
                       <?php
                         //Query to display all the roles available
 						$queryRol = "SELECT * FROM rol";
-						$result2 = mysql_query($queryRol) or die ("Could not execute Rol query.");
-						$nrows2 = mysql_num_rows($result2);
+						$result2 = $conn->query($queryRol) or die ("Could not execute Rol query.");
+						$nrows2 = $result2->num_rows;
 						for ($i=0;$i<$nrows2;$i++){	
-						$row2 = mysql_fetch_assoc($result2);
+						$row2 = $result2->fetch_assoc();
 						extract($row2);						
 					  ?>
                       <div class="col-md-4 col-sm-4 col-xs-12 form-group has-feedback">                        
