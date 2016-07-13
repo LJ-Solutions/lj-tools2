@@ -45,7 +45,7 @@ function getFtpConnection() {
  */
 gulp.task('browser-sync', function() {
   browserSync.init({
-    //files: ['./**/*.php'],
+    files: ['./**/*.php'],
     injectChanges: true,
     proxy: "dev.ljtool2.com"
   });
